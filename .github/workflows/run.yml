@@ -54,13 +54,6 @@ jobs:
         echo "共有 $user_num 个账号，即将开始签到"
         fi
 
-        random_time=$(($RANDOM % 45))
-        echo "等待 ${random_time} 分钟后开始签到"
-        for((i=1;i<=${random_time};i++));  
-        do
-        echo "倒计时:剩余 $[${random_time}-$i] 分钟"
-        sleep 1m
-        done
 
         for ((i=0;i<$user_num;i++))
         do
